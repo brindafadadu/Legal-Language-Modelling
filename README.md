@@ -1,5 +1,5 @@
 # In-House Legal Intelligence System for Indian Case Law
-**CS781: Advanced Natural Language Processing — Capstone Project (Autumn 2026)**  
+**CS781: Natural Language Processing — Capstone Project**  
 **Department of Computer Science and Engineering, IIT Kanpur**
 
 * **Author**: Brinda Fadadu
