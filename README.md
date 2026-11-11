@@ -60,11 +60,6 @@ Four architectures were designed, constructed, and pre-trained under identical c
 4. **Architecture 4 (Custom Winning Foundation)**: Attention with Linear Biases (ALiBi), per-head QK-norm ($\text{RMSNorm}(Q), \text{RMSNorm}(K)$), SwiGLU non-linear FFN ($d_{\text{ff}}=2560$), Pre-RMSNorm, and tied input-output embeddings ($d_{\text{model}}=768$, 12 layers, 12 heads; 105.26M params).
 
 #### 3. Key Findings & Metric Comparison
-* **Validation Perplexity**:
-  * **Arch 4**: **23.66** (Validation loss: 3.164, Training loss: 3.11 after 2,136 steps / 49.7 minutes).
-  * **Arch 2**: 120.75 (30M tokens, 1,831 steps).
-  * **Arch 1**: 190.77 (60M tokens, 3,662 steps).
-  * **Arch 3**: Did not achieve stability; stopped at step 2,800.
 * **Why Arch 4 Won**:
   * *QK-Norm*: Bounds query-key dot products to $\le \sqrt{d_{\text{head}}}$, eliminating attention entropy collapse under high learning rates ($4\times 10^{-4}$) on specialized legal syntax.
   * *ALiBi*: Injects relative linear distance penalties ($m \cdot (j - i)$) directly into attention logits, providing an inductive bias for local syntactic dependencies without consuming parameter capacity.
