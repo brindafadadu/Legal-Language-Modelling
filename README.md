@@ -43,32 +43,6 @@ The official scores recorded on the final evaluation benchmark (recorded 7/11/26
 
 ---
 
-## Repository Structure
-
-```text
-.
-├── code/
-│   ├── phase1/
-│   │   └── Phase 1.ipynb          # Pretraining Arch 1-4, BPE tokenizer, word generation
-│   ├── phase2/
-│   │   └── Phase 2.ipynb          # Legal NER: Token classification, Viterbi, post-processing
-│   ├── phase3/
-│   │   └── Phase 3.ipynb          # Rhetorical Roles: LoRMA adaptation, BiLSTM sentence chunker
-│   ├── phase4/
-│   │   └── Phase 4.ipynb          # Judgment Prediction: Head+Tail chunking, 2-stage LP-FT
-│   ├── phase5/
-│   │   └── Phase 5.ipynb          # Statute Identification: Keyword windows, ASL loss, ensemble
-│   ├── phase6/
-│   │   └── Phase 6.ipynb          # Summarization: SumBasic extraction, prompt caching, decoding
-│   └── phase7/
-│       └── Phase 7.ipynb          # Retrieval: GradCache contrastive bi-encoder, BM25 hybrid
-├── report/
-│   └── CS781_CP_Brinda_Fadadu_230307.pdf   # Complete formal project report (PDF)
-└── README.md                      # Comprehensive documentation & technical appendix
-```
-
----
-
 ## Phase-by-Phase Technical Breakdown
 
 ### Phase 1: Foundation Legal Language Model Pretraining
